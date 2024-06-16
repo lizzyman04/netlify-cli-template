@@ -1,7 +1,7 @@
 [build]
   functions = "functions-build"
   command = "yarn build"
-  publish = "dist"
+  publish = "public"
   environment = { NODE_VERSION = "14.17.0" }
 
 [[redirects]]
