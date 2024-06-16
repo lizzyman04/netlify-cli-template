@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "A simple blog, from student to student",
   "main": "index.js",
-  "repository": "github.com/Lizzyman04/tudocomlizzyman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lizzyman04/tudocomlizzyman"
+  },
   "author": "Arlindo Abdul",
   "license": "MIT",
   "scripts": {
     "start": "netlify-lambda serve functions",
-    "build": "netlify-lambda build functions"
+    "build": "netlify-lambda build functions --output functions-build"
   },
   "dependencies": {
     "netlify-lambda": "^2.0.16"
