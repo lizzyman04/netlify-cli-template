@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "start": "netlify-lambda serve functions",
-    "build": "netlify-lambda build functions --output functions-build"
+    "build": "netlify-lambda build functions"
   },
   "dependencies": {
     "netlify-lambda": "^2.0.16"
