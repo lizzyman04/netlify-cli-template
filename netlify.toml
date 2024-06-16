@@ -1,5 +1,8 @@
 [build]
   functions = "functions-build"
+  command = "yarn build"
+  publish = "dist"
+  environment = { NODE_VERSION = "14.17.0" }
 
 [[redirects]]
   from = "/.netlify/functions/*"
