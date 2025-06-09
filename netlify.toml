@@ -1,10 +1,13 @@
 [build]
-  functions = "functions-build"
   command = "yarn build"
   publish = "public"
-  environment = { NODE_VERSION = "14.17.0" }
+  functions = "netlify/functions"
+
+[dev]
+  port = 8888
+  functionsPort = 9000
 
 [[redirects]]
-  from = "/functions/*"
+  from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200

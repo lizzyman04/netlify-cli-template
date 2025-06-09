@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo Com Lizzyman</title>
+    <title>Netlify CLI Template</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <h2>Hello, that is main path</h2>
+    <div class="container">
+        <h1>Netlify CLI Template</h1>
+        <p>A robust template for serverless functions and static sites.</p>
+
+        <section>
+            <h2>Hello Function</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="callHello()">Greet Me</button>
+            <p id="helloResponse"></p>
+        </section>
+
+        <section>
+            <h2>Time Function</h2>
+            <button onclick="callTime()">Get Server Time</button>
+            <p id="timeResponse"></p>
+        </section>
+
+        <section>
+            <h2>Echo Function</h2>
+            <textarea id="echoInput" placeholder="Enter JSON to echo"></textarea>
+            <button onclick="callEcho()">Echo JSON</button>
+            <p id="echoResponse"></p>
+        </section>
+    </div>
+    <script src="/script.js"></script>
 </body>
+
 </html>

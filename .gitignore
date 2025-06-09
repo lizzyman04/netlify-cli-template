@@ -1,1 +1,24 @@
+# Node.js
 node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Netlify
+.netlify/
+dist/
+
+# Environment variables
+.env
+.netlify/state.json
+.netlify/config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
