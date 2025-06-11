@@ -2,37 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify CLI Template</title>
-    <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Netlify CLI Template - Build Serverless Apps with Ease</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="A modern Netlify CLI template with TypeScript serverless functions, a customizable static frontend, and Neon Postgres integration.">
+
+    <!-- Open Graph (for social sharing) -->
+    <meta property="og:title" content="Netlify CLI Template" />
+    <meta property="og:description"
+        content="Build fast, scalable serverless applications using Netlify CLI and TypeScript." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://netlify-cli-template.github.tudocomlizzyman.com/banner.png" />
+    <meta property="og:url" content="https://netlify-cli-template.github.tudocomlizzyman.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Netlify CLI Template" />
+    <meta name="twitter:description"
+        content="Launch serverless apps faster with this Netlify CLI + TypeScript starter." />
+    <meta name="twitter:image" content="https://netlify-cli-template.github.tudocomlizzyman.com/banner.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="container">
-        <h1>Netlify CLI Template</h1>
-        <p>A robust template for serverless functions and static sites.</p>
 
-        <section>
-            <h2>Hello Function</h2>
-            <input type="text" id="nameInput" placeholder="Enter your name">
-            <button onclick="callHello()">Greet Me</button>
-            <p id="helloResponse"></p>
-        </section>
+<body class="bg-gray-100 font-sans text-gray-800">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Netlify CLI Template 🚀</h1>
+            <p class="text-xl md:text-2xl mb-6">A modern, TypeScript-powered template for serverless apps and static
+                sites.</p>
+            <div class="space-x-4">
+                <a href="https://github.com/lizzyman04/netlify-cli-template"
+                    class="inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 transition duration-300">Clone
+                    on GitHub</a>
+                <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lizzyman04/netlify-cli-template"
+                    class="inline-block bg-yellow-400 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300">Deploy
+                    to Netlify</a>
+            </div>
+        </div>
+    </header>
 
-        <section>
-            <h2>Time Function</h2>
-            <button onclick="callTime()">Get Server Time</button>
-            <p id="timeResponse"></p>
-        </section>
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose This Template? ✨</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Serverless Functions 🛠️</h3>
+                    <p>Four TypeScript functions (`hello`, `time`, `echo`, `neon`) with CORS and error handling.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">TypeScript Support 📝</h3>
+                    <p>Type-safe development with AWS Lambda types for reliable serverless code.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Neon-Ready 🗄️</h3>
+                    <p>Prepared for Neon Postgres integration with the `neon` function.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Static Site 🖥️</h3>
+                    <p>Customizable HTML frontend, ready for React, Vue, or Astro.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Netlify CLI ⚙️</h3>
+                    <p>Streamlined local development and deployment with `netlify dev`.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Yarn Workflow 📦</h3>
+                    <p>Optimized for Yarn, ensuring fast and reliable package management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Echo Function</h2>
-            <textarea id="echoInput" placeholder="Enter JSON to echo"></textarea>
-            <button onclick="callEcho()">Echo JSON</button>
-            <p id="echoResponse"></p>
-        </section>
-    </div>
+    <!-- Function Demos Section -->
+    <section class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">Explore Our Serverless Functions 🎮</h2>
+            <!-- Tab Menu -->
+            <div class="flex justify-center space-x-2 mb-8">
+                <button data-tab="hello"
+                    class="tab-button px-6 py-3 text-lg font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300 active">Hello
+                    👋</button>
+                <button data-tab="time"
+                    class="tab-button px-6 py-3 text-lg font-semibold rounded-lg bg-gray-300 text-gray-800 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 transition duration-300">Time
+                    ⏰</button>
+                <button data-tab="echo"
+                    class="tab-button px-6 py-3 text-lg font-semibold rounded-lg bg-gray-300 text-gray-800 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 transition duration-300">Echo
+                    📢</button>
+                <button data-tab="neon"
+                    class="tab-button px-6 py-3 text-lg font-semibold rounded-lg bg-gray-300 text-gray-800 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 transition duration-300">Neon
+                    🗄️</button>
+            </div>
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Hello Function -->
+                <div id="hello" class="tab-pane p-8 bg-white rounded-xl shadow-xl max-w-lg mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Hello Function 👋</h3>
+                    <p class="mb-4 text-gray-600">Greet users with a custom name.</p>
+                    <input id="nameInput" type="text" placeholder="Enter your name"
+                        class="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                    <button data-action="callHello"
+                        class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300">Greet
+                        Me</button>
+                    <p id="helloResponse" class="mt-4 text-gray-600 font-medium"></p>
+                </div>
+                <!-- Time Function -->
+                <div id="time" class="tab-pane hidden p-8 bg-white rounded-xl shadow-xl max-w-lg mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Time Function ⏰</h3>
+                    <p class="mb-4 text-gray-600">Get the current server time.</p>
+                    <button data-action="callTime"
+                        class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300">Get
+                        Server Time</button>
+                    <p id="timeResponse" class="mt-4 text-gray-600 font-medium"></p>
+                </div>
+                <!-- Echo Function -->
+                <div id="echo" class="tab-pane hidden p-8 bg-white rounded-xl shadow-xl max-w-lg mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Echo Function 📢</h3>
+                    <p class="mb-4 text-gray-600">Send JSON and get it echoed back.</p>
+                    <textarea id="echoInput" placeholder="Enter JSON to echo"
+                        class="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 h-24 resize-y"></textarea>
+                    <button data-action="callEcho"
+                        class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300">Echo
+                        JSON</button>
+                    <p id="echoResponse" class="mt-4 text-gray-600 font-medium whitespace-pre-wrap"></p>
+                </div>
+                <!-- Neon Function -->
+                <div id="neon" class="tab-pane hidden p-8 bg-white rounded-xl shadow-xl max-w-lg mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Neon Function 🗄️</h3>
+                    <p class="mb-4 text-gray-600">Test the Neon Postgres integration endpoint.</p>
+                    <button data-action="callNeon"
+                        class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300">Test
+                        Neon Endpoint</button>
+                    <p id="neonResponse" class="mt-4 text-gray-600 font-medium"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+
+            <div class="mb-8 flex justify-center">
+                <img src="/banner.png" alt="Netlify Banner" class="w-[420px] h-auto mx-auto" />
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="https://github.com/lizzyman04/netlify-cli-template" class="hover:text-yellow-400">GitHub</a>
+                <a href="https://docs.netlify.com/cli/get-started/" class="hover:text-yellow-400">Netlify CLI Docs</a>
+                <a href="https://docs.netlify.com/functions/overview/" class="hover:text-yellow-400">Netlify Functions
+                    Docs</a>
+                <a href="https://neon.tech/docs/" class="hover:text-yellow-400">Neon Docs</a>
+            </div>
+
+            <p class="text-lg mb-6">
+                Built with ❤️ using <a href="https://docs.netlify.com/cli/get-started/"
+                    class="underline hover:text-yellow-400">Netlify CLI</a> and <a href="https://yarnpkg.com/"
+                    class="underline hover:text-yellow-400">Yarn</a>
+            </p>
+        </div>
+    </footer>
+
+
     <script src="/script.js"></script>
 </body>
 

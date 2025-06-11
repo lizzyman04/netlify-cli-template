@@ -22,7 +22,6 @@ export const handler: Handler = async (event: APIGatewayProxyEventV2, context: C
             })
         };
     } catch (error) {
-        console.error('Error in time handler:', error);
         return {
             statusCode: 500,
             headers: {

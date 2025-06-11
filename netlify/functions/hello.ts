@@ -17,7 +17,6 @@ export const handler: Handler = async (event: APIGatewayProxyEventV2, context: C
             })
         };
     } catch (error) {
-        console.error('Error in hello handler:', error);
         return {
             statusCode: 500,
             headers: {
