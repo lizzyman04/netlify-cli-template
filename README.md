@@ -1,9 +1,10 @@
 # Netlify CLI Template 🚀
 
+> **⚠️ Archived** — This template is no longer maintained. It was last updated in May 2026 and reflects the Netlify Functions v2 ecosystem at that time. Feel free to fork it, but no further updates will be made.
+
 A **robust** and **adaptable** template for building serverless applications and static sites with Netlify CLI. Modern setup with **TypeScript**, **Netlify Functions v2** (Web API format), Neon Postgres, Netlify Blobs, scheduled jobs, and a customizable static frontend.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/775d29f8-97b2-4f54-a2e5-85538a6d56b0/deploy-status)](https://app.netlify.com/projects/netlify-cli-template/deploys)
 
 ## ✨ Features
 
@@ -191,10 +192,6 @@ No webhooks, no cron providers — Netlify triggers it automatically.
 
 **MIT**. See [LICENSE](LICENSE) for details.
 
-## 👤 Author
-
-**Arlindo Abdul** — [GitHub @lizzyman04](https://github.com/lizzyman04)
-
 ## 📚 Resources
 
 - [Netlify Functions v2 Docs](https://docs.netlify.com/build/functions/get-started/)
@@ -205,5 +202,7 @@ No webhooks, no cron providers — Netlify triggers it automatically.
 - [TypeScript Docs](https://www.typescriptlang.org/docs/)
 
 ---
+
+> Thank you for visiting. This repository is now a time capsule — feel free to explore, fork, and build upon it. ✌️
 
 Built with ❤️ using **Netlify CLI** and **Yarn**.
