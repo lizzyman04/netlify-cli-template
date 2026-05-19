@@ -7,3 +7,5 @@
   port = 8888
   functionsPort = 9000
 
+[functions]
+  node_bundler = "esbuild"
